@@ -14,7 +14,7 @@ import upload
 import uploadimg
 import json
 
-os.environ["_BARD_API_KEY"] = "YgjkHyvTvmcIb51fhquCLpGm30BAcqrxUvWywmQdmHtLIrsuDXtYWFCTtEHUX46BUc9oJg."
+os.environ["_BARD_API_KEY"] = "Enter Your Own Bard API key"
 
 
 def get_file_path(folder_name):
