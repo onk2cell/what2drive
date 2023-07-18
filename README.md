@@ -1,16 +1,16 @@
 # what2drive
 
-Description
-This project aims to automate the processing and storage of documents received via WhatsApp. The program will analyze the content of the received images, such as invoices, bills, and receipts, and perform the following tasks:
+What2Drive is a Python-based tool that helps you efficiently manage and organize your documents by automatically saving them to Google Drive and providing relevant insights.
 
-1) Save the image to Google Drive based on its content.
-2) Summarize the document.
-3) Embed the image within the summarized document.
-4) Rename the document based on its content.
-5) Upload both the summarized document and the original image to Google Drive .
-7)  Drive API to manage file storage and retrieval and for ocr
+## Features
 
-#    Node.js and google drive api 
+- **Automated Document Saving**: Save document images to Google Drive with appropriate file names.
+- **Content Detection**: Detect and suggest updates for image file names based on the content of invoices.
+- **Summarization**: Generate summaries of document contents to quickly grasp essential information.
+- **Efficient Tracking**: Keep track of invoices and other important documents effortlessly.
+- **Customizable**: Easily adapt the tool to your specific document management needs.
+
+#  Prerequisite are  Node.js and Google Drive api 
 
 To install Node.js, follow these steps:
 
@@ -41,3 +41,59 @@ To install Node.js, follow these steps:
  -------------------------------------------------------------------------------------------------------------
 
 to setting upgoogle drive you can watch this you tube video : https://youtu.be/G_4KUbuwtlM
+
+
+## Installation
+
+1. Clone the repository:
+
+   ```
+   git clone https://github.com/onk2cell/what2drive.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```
+   cd what2drive
+   ```
+
+3. Create and activate a virtual environment (optional but recommended):
+
+   ```
+   python -m venv env
+   source env/bin/activate
+   ```
+
+4. Install the required dependencies:
+
+   ```
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+1. Set up Google Drive API credentials:
+   
+   - Follow the instructions in the  to create and obtain the necessary API credentials.
+   - Save the credentials file as `credentials.json` in the project directory.
+
+2. Customize the configuration:
+
+   - Open `config.json` and update the settings as per your requirements.
+
+3. Run the program:
+
+   ```
+   python watchbitch.py
+   ```
+
+   This will start the What2Drive tool and perform the necessary operations based on your configuration.
+
+## Contribution
+
+Contributions are welcome! If you encounter any issues or have suggestions for improvements, feel free to submit a pull request or open an issue in the GitHub repository.
+
+
+.
+
+
