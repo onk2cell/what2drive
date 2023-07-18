@@ -16,6 +16,11 @@ import json
 
 os.environ["_BARD_API_KEY"] = "Enter Your Own Bard API key"
 
+"""
+
+
+
+"""
 
 def get_file_path(folder_name):
     """Gets the file path for the newly created image in the specified folder."""
