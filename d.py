@@ -18,6 +18,25 @@ os.environ["_BARD_API_KEY"] = "Enter Your Own Bard API key"
 
 """
 
+How OCR is Working here without any external apis ? 
+
+Checks if valid credentials are already saved. If not, it prompts the user to log in and saves the obtained credentials for future use.
+
+Builds the Drive API service using the obtained credentials.
+
+Uploads an image file to Google Drive, converting it into a Google Doc in the process.
+
+Exports the Google Doc as plain text.
+
+Downloads the text content of the Google Doc and saves it into a buffer.
+
+Deletes the file from Google Drive based on its ID.
+
+Retrieves the downloaded text content from the buffer and decodes it.
+
+Returns the decoded text content as output.
+
+The code assumes that the self.pickle and self.credentials variables have been properly defined and point to the paths of the pickle file and credentials file, respectively.
 
 
 """
