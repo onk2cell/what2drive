@@ -10,7 +10,7 @@ class FileEventHandler(FileSystemEventHandler):
             file_name = event.src_path
             print(f"New file created: {file_name}")
 
-            # Replace 'python_script.py' with the actual name of your Python script
+            
             subprocess.Popen(['python', 'd.py', file_name])
 
 
