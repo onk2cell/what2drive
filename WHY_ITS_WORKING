@@ -1,0 +1,29 @@
+How it works ? 
+okk , first of all when some sends us a mesda file file in whatsup in our case it is a img which may have .png or .jpg now we are useing the whatsup.js in that file we have imported a 
+node package called "whatsapp-web.js" now by useing the inbulit function
+we get image data but the image is in binary format now we have to convert image to a thing that we can understant now after that we save image in a dersised folder location 
+now , after saveing the location the folder lenghth is going to increase (it is important in our case so keep that in mind ) now we came caross the watchbitch.pt it is file 
+that keeps track on the our folder , 
+if num of files in folder areincreased by +1 
+  then : 
+    execute d.py , upload.py , uploadimg.py
+now in d.py : 
+    ocr:
+        for ocr we are useing google drive , wait a min what, how, why !
+    so we are useing google drive cause it has state of the  google vision api in it ,
+    !) now when genselly we upload image to google drive if that img has text and if view that imag in a word document we could get text in lower of that file .
+`````
+    How to use that functionality ?
+    first we have to upload the image to google drive , now get the image that is recently added in whre we saved our whats up imgs 
+      {IMG} -in--> d.py -OUT--> {TEXT}
+    in this way succesfully got the text.
+``````
+    now after that we are taking that 
+    {TEXT} -in--> d.py -out--> {LIST OF NAMES FOR THAT CONTENT INSIDE OF THE TEXT }
+    lets say text is = "hi my name is gameonkar nice to meet you , here is my phone number 9090909090 call me at 12}
+          it is happing due to promt("give list of names based on this {TEXT}")
+    output names list would be --> [gameonkar_contact.img , number_9090909090.img , call_game_at_12]
+          now here we will be useing the nlp to get best name for the image based on the content insde of it :
+      {LIST OF NAMES FOR THAT CONTENT INSIDE OF THE TEXT } --->  nlp_function_to_match_similarity_bewteen_{TEXT}and{LIST OF NAMES FOR THAT CONTENT INSIDE OF THE TEXT } --out--> {best_name}
+````````
+    
